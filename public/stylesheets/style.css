@@ -1,0 +1,67 @@
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+}
+
+.df{
+  display: flex;
+}
+
+.jc-center{
+  justify-content: center;
+}
+
+.jc-sb{
+  justify-content: space-between;
+}
+
+.jc-sa{
+  justify-content: space-around;
+}
+
+.ai-start{
+  align-items: flex-start;
+}
+
+.ai-center{
+  align-items: center;
+}
+
+.flex-wrap{
+  flex-wrap: wrap
+}
+
+.w-max{
+  width: 100%;
+}
+
+a {
+  color: rgb(29, 117, 151);
+}
+
+h1, h2, h3 {
+  width: 100%;
+}
+
+#stats{
+  margin-top: 40px;
+}
+
+#stats h2{
+  width: auto;
+  margin-right: 40px;
+}
+
+#list{
+  margin-top: 40px;
+}
+
+#list > div{
+  margin-right: 20px;
+}
+
+table th{
+  padding: 5px 10px;
+}
