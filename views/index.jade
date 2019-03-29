@@ -3,7 +3,7 @@ extends layout
 block content
   h1.df.ai-center.jc-center= title
   form.df.ai-center.jc-center(onsubmit="search(event)")
-    input#keyword(type="text", placeholder="Enter the movie name...")
+    input#keyword(type="text", placeholder="Search movie...")
     button= "Search"
   #stats.df.ai-center.jc-center.w-max
     h2.good
@@ -15,9 +15,15 @@ block content
     h2.normal
       span= "普雷"
       span.num= 0
+    h2.other
+      span= "不分類"
+      span.num= 0
   .total.df.ai-center.jc-center.w-max
-    span= "總計"
+    span= "總計(不包含其他分類): "
     span.num= 0
+  #result.hide.w-max
+    h2.df.ai-center.jc-center
+      div.temperature
   #list.df.ai-start.jc-sa.w-max
     .good
       h3= "好雷"
@@ -41,6 +47,16 @@ block content
         tbody
     .normal
       h3= "普(無)雷"
+      table(border="1")
+        thead
+          tr
+            th= "push"
+            th= "Title"
+            th= "Author"
+            th= "Date"
+        tbody
+    .other
+      h3= "不分類"
       table(border="1")
         thead
           tr
