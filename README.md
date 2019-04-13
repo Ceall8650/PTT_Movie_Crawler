@@ -1,2 +1,2 @@
 # PTT_Movie_Crawler
-You can know about a movie the how many good or bad opinions on PTT movie group
+You can get the all opinions of a movie that published in PTT movie group
